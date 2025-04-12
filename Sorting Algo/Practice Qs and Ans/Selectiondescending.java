@@ -1,0 +1,29 @@
+
+public class Selectiondescending {
+
+    public static void sorting(int numbers[]) {
+        for (int i = 0; i < numbers.length - 1; i++) {
+            int maxpos = i;
+            for (int j = i + 1; j < numbers.length; j++) {
+                if (numbers[maxpos] < numbers[j]) {
+                    maxpos = j;
+                }
+            }
+            int temp = numbers[maxpos];
+            numbers[maxpos] = numbers[i];
+            numbers[i] = temp;
+        }
+    }
+
+    public static void printing(int numbers[]) {
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i] + "  ");
+        }
+    }
+
+    public static void main(String args[]) {
+        int numbers[] = {3, 6, 2, 1, 8, 7, 4, 5, 3, 1};
+        sorting(numbers);
+        printing(numbers);
+    }
+}
