@@ -9,7 +9,7 @@ public class Updateithbit {
 
     public static int bit(int n, int i, int newBit) {
         n = clear(n, i);
-        int bitmask = i << newBit;
+        int bitmask = newBit << i;
         return n | bitmask;
     }
 
