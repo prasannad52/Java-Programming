@@ -1,4 +1,3 @@
-package Recursion;
 public class IncreasingOrder {
 
     public static void print(int n) {
