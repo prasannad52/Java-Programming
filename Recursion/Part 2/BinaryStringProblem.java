@@ -1,5 +1,4 @@
 //important dude read it and make stack analysis
-
 public class BinaryStringProblem {
     public static void binaryString(int n, int lastPlace, String str) {
         if (n == 0) {
