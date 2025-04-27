@@ -53,7 +53,8 @@ public class NQueenCount {
     static int count;
 
     public static void main(String[] args) {
-        int n = 5;
+        count = 0;// this initialization is very important
+        int n = 1;
         char board[][] = new char[n][n];
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board.length; j++) {
