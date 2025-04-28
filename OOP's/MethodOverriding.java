@@ -26,6 +26,7 @@ class Dog extends Animal {
 
     String breed;
 
+    @Override
     void eat() {
         System.out.println("dog eats");
     }
