@@ -151,10 +151,54 @@ class LinkedList {
         prev.next = prev.next.next;
     }
 
+    // slow fast approach
+    public Node findMidNode(Node head) {
+        Node slow = head;
+        Node fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+    }
+
+    public boolean checkPalindrome() {
+        if (head == null && head.next == null) {
+            return true;
+        }
+        // step 1: find mid
+        Node midNode = findMidNode(head);
+
+        // step 2: reverse second half
+        Node prev = null;
+        Node cur = midNode;
+        Node next;
+        while (cur != null) {
+            next = cur.next;
+            cur.next = prev;
+            prev = cur;
+            cur = next;
+        }
+
+        // step 3: compare first half and second half
+        Node right = prev;
+        Node left = head;
+        while (right != null) {
+            if (right.data != left.data) {
+                return false;
+            }
+            left = left.next;
+            right = right.next;
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
         list.addFirst(1);
-        list.addLast(3);
+        list.addFirst(3);
+        list.addFirst(3);
+        list.addFirst(1);
         System.out.println("----------------------------------------------------");
         list.printing();
         // System.out.println("----------------------------------------------------");
@@ -171,12 +215,13 @@ class LinkedList {
         // System.out.println("----------------------------------------------------");
         // System.out.println(list.search(5));
         // System.out.println("----------------------------------------------------");
-        list.reverseList();
-        System.out.println("----------------------------------------------------");
-        list.printing();
-        System.out.println("----------------------------------------------------");
-        list.dltNthfromEnd(1);
-        System.out.println("----------------------------------------------------");
-        list.printing();
+        // list.reverseList();
+        // System.out.println("----------------------------------------------------");
+        // list.printing();
+        // System.out.println("----------------------------------------------------");
+        // list.dltNthfromEnd(1);
+        // System.out.println("----------------------------------------------------");
+        // list.printing();
+        System.out.println(list.checkPalindrome());
     }
 }
