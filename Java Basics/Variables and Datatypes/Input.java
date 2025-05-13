@@ -17,8 +17,8 @@ public class Input {
         sc.close();
     }
 }
-//nextDouble()
-//nextLong()
-//nextShort()
-//nextByte
-//nextBoolean()
+// nextDouble()
+// nextLong()
+// nextShort()
+// nextByte()
+// nextBoolean()
