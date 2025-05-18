@@ -13,3 +13,10 @@ public class Character {
     }
 }
 // write it for n value by taking input using scanner
+// output
+/*
+ * A
+ * BC
+ * DEF
+ * GHIJ
+ */

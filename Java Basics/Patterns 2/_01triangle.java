@@ -18,3 +18,10 @@ public class _01triangle {
         triangle(4);
     }
 }
+// output
+/*
+ * 1
+ * 01
+ * 101
+ * 0101
+ */

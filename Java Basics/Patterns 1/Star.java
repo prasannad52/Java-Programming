@@ -11,3 +11,11 @@ public class Star {
     }
 }
 // write it for n value by taking input using scanner
+// output
+/*
+ * *
+ * **
+ * ***
+ * ****
+ * *****
+ */

@@ -11,3 +11,10 @@ public class Halfpyramid {
     }
 }
 // write it for n value by taking input using scanner
+// output
+/*
+ * 1
+ * 12
+ * 123
+ * 1234
+ */

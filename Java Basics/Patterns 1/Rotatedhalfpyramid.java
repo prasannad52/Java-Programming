@@ -14,3 +14,10 @@ public class Rotatedhalfpyramid {
         }
     }
 }
+// output
+/*
+ * * * * *
+ * *
+ * *
+ * * * * *
+ */

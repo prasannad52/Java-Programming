@@ -1,3 +1,4 @@
+//check this there are condition which are very important
 class CircularQueueArray {
     static class Queue {
         static int arr[];
@@ -57,6 +58,7 @@ class CircularQueueArray {
         }
     }
 
+    @SuppressWarnings("static-access")
     public static void main(String[] args) {
         Queue q = new Queue(3);
         q.add(1);

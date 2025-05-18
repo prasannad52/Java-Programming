@@ -32,3 +32,7 @@ public class Butterfly {
         fly(5);
     }
 }
+// output
+/*
+ * 
+ */
