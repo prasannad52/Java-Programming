@@ -4,7 +4,7 @@ public class Palindrome {
 
     public static boolean pali(int n) {
         int rev = 0;
-        int original = n;
+        int original = n;// this should not forget
         int rem;
         while (n > 0) {
             rem = n % 10;
